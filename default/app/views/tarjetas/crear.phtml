@@ -1,0 +1,15 @@
+<?= View::partial('desafios/desafio1/form_builder', false, 
+['data'=>$data,  'controller_name'=>$controller_name]
+);?>
+
+<?= Form::open() ?>
+<?= Form::number('targetas._id_cuenta_asociada') ?>
+<?= Form::number('targetas.saldo_actual') ?>
+<?= Form::number('targetas.saldo_anterior') ?>
+<?= Form::number('targetas.saldo_minumo') ?>
+<?= Form::text('targetas.nombre_entidad') ?>
+
+
+
+<?= Form::submit('Guardar') ?>
+<?= Form::close() ?>

@@ -1,0 +1,12 @@
+<?= View::partial('desafios/desafio1/form_builder', false, 
+['data'=>$data,  'controller_name'=>$controller_name]
+);?>
+
+<?= Form::open() ?>
+<?= Form::number('cuentas.id_sucursal') ?>
+<?= Form::number('cuentas.saldo') ?>
+<?= Form::number('cuentas.movimientos_maximos') ?>
+
+
+<?= Form::submit('Guardar') ?>
+<?= Form::close() ?>

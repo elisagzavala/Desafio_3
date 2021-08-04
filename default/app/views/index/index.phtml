@@ -1,0 +1,19 @@
+   <h3>Bienvenido<strong> <?= Session::get('active_info')['user'] ?> </strong></h3>
+
+   Info de usuario <?= var_dump ( Session::get('active_info') ) ?>
+
+  Ver Usuarios <?= View::partial('desafio2\KumbiaPHP\default\app\views\usuarios', false, 
+['data'=>$data, 'id'=>$id, 'controller_name'=>$controller_name]
+); ?>
+
+Ver Ciudades <?= View::partial('desafio2\KumbiaPHP\default\app\views\ciudades', false, 
+['data'=>$data, 'id'=>$id, 'controller_name'=>$controller_name]
+); ?>
+
+Ver Targetas <?= View::partial('desafio2\KumbiaPHP\default\app\views\targetas', false, 
+['data'=>$data, 'id'=>$id, 'controller_name'=>$controller_name]
+); ?>
+
+Ver Cuentas <?= View::partial('desafio2\KumbiaPHP\default\app\views\cuentas', false, 
+['data'=>$data, 'id'=>$id, 'controller_name'=>$controller_name]
+); ?>

@@ -1,0 +1,14 @@
+<?= View::partial('desafios/desafio1/form_builder', false, 
+['data'=>$data, 'id'=>$id, 'controller_name'=>$controller_name]
+);
+<?php View::content() ?>
+
+<?= Form::open() ?>
+<?= Form::text('ciudades.nombre') ?> 
+<?= Form::number('ciudades.id_estado') ?>
+<?= Form::text('ciudades.municipio') ?> 
+
+
+
+<?= Form::submit('Guardar') ?>
+<?= Form::close() ?>

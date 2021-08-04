@@ -1,0 +1,17 @@
+<?= View::partial('desafios/desafio1/form_builder', false, 
+['data'=>$data,  'controller_name'=>$controller_name]
+);?>
+
+<?= Form::open() ?>
+<?= Form::text('empleados.nombre') ?>
+<?= Form::text('empleados.apellidos') ?>
+<?= Form::text('empleados.direccion') ?>
+<?= Form::number('empleados.-id_sucursal_asociada') ?>
+<?= Form::number('empleados.nivel') ?>
+<?= Form::number('empleados.telefono') ?>
+
+
+<?= Form::submit('Guardar') ?>
+<?= Form::close() ?>
+
+
